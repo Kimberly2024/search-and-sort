@@ -15,7 +15,17 @@ public class Sequential
    */
   public static int search(int[] arr, int target) {
     // Your algorithm goes here!
-    
+    int i = 0;
+    while (arr[i] != target && i != arr.length) {
+        i = i +1;
+    }
+    if (arr[i] == target) {
+        System.out.println("Item found at " + 1);
+    }
+    if (arr[i] != target || i == arr.length) {
+        System.out.println("Item not found ");
+    }
+    return i;
   }
   
   public static void main(String[] args) {
